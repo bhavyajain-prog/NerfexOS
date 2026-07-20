@@ -1,0 +1,20 @@
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+
+# IDE
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build
+releases/
+
+# Testing
+testing/output/
