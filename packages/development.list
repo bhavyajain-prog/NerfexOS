@@ -1,0 +1,40 @@
+# Development tooling
+# Confirmed languages: Java, C/C++, Python, Node.js
+# Confirmed tools: Docker, Git, IntelliJ IDEA (Maven), VS Code, Antigravity
+
+# --- Java (Maven-based) ---
+jdk-openjdk                # tracks latest LTS on Arch — TODO: pin a specific version if needed
+maven
+
+# --- C / C++ ---
+gcc
+make
+cmake
+gdb
+
+# --- Python ---
+python
+python-pip
+
+# --- Node.js ---
+nodejs
+npm
+
+# --- Containers ---
+docker
+docker-compose
+# NOTE: after install, user must be added to the `docker` group
+# (post-install step, not a package — belongs in install.sh, not here)
+
+# --- Version control ---
+# git already in base.list — not duplicated here
+
+# --- IDEs ---
+intellij-idea-community-edition   # AUR — swap for intellij-idea-ultimate-edition (AUR, needs license) if preferred
+visual-studio-code-bin            # AUR — official MS build, full extension marketplace
+                                   # (vs. `code` in extra repo, which is the OSS build w/ limited marketplace access)
+
+# Antigravity (Google) — NOT available via pacman or AUR as of this writing.
+# Google-only agentic VS Code fork, distributed as a direct download from
+# Google's site. Install manually; not scriptable via this list.
+# TODO: revisit if an AUR package appears later.

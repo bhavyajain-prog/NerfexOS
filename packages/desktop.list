@@ -1,0 +1,43 @@
+# Desktop environment packages
+# Derived from docs/architecture.md — Session, Compositor, Shell Components,
+# Terminal, Window Decoration, Display Manager, Lock Screen, Qt/GTK Bridging
+
+# --- Session / Compositor ---
+plasma-desktop
+plasma-workspace          # includes KWin, KScreenLocker, System Settings
+plasma-wayland-session
+powerdevil
+plasma-nm                 # NetworkManager applet
+plasma-pa                 # audio applet
+xdg-desktop-portal-kde    # Wayland portal support (screen share, file picker, etc.)
+
+# --- Shell components (standalone, replacing Plasma's own panel/launcher/notifications) ---
+waybar
+mako
+
+# rofi: mainline `rofi` has gained native Wayland support in recent releases
+# (2.x). VERIFY at install time whether plain `rofi` covers KWin/Wayland
+# correctly, or fall back to AUR rofi-lbonn-wayland if not.
+rofi
+
+# --- Terminal ---
+konsole
+
+# --- Window decoration ---
+klassy                    # AUR — requires Plasma 6.3+ (current: 6.7.3, OK)
+
+# --- Lock screen ---
+# KScreenLocker ships with plasma-workspace above — customized, not replaced
+
+# --- Display manager ---
+sddm
+
+# --- Qt/GTK bridging (docs/architecture.md) ---
+qt6ct
+kvantum                   # provides Kvantum + kvantum-qt6 style engine
+nwg-look                  # AUR — GTK theme applier for Wayland
+
+# --- Fonts (docs/design.md typography) ---
+ttf-inter
+ttf-jetbrains-mono-nerd
+ttf-cinzel                # AUR — verify exact package name at install time

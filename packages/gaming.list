@@ -1,0 +1,11 @@
+# Gaming
+#
+# Decision: no dedicated Linux gaming stack. Primary gaming (e.g. Valorant)
+# is handled via a separate Windows install on a USB-connected SSD, selected
+# at the UEFI boot-device level (see docs/architecture.md — Bootloader).
+#
+# Only Linux-native gaming interest is Minecraft, which requires nothing
+# beyond the JDK already declared in development.list (jdk-openjdk).
+#
+# No Steam / Proton / Lutris installed. Revisit this file only if that
+# changes.

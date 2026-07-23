@@ -2,7 +2,7 @@
 
 > A highly customized, Arch Linux based desktop experience built around a minimal, cinematic design philosophy.
 
-![Version](https://img.shields.io/badge/version-0.0.1-blue) ![Status](https://img.shields.io/badge/status-Planning-orange) ![Base](https://img.shields.io/badge/base-Arch%20Linux-1793D1)
+![Version](https://img.shields.io/badge/version-0.0.4-blue) ![Status](https://img.shields.io/badge/status-Planning-orange) ![Base](https://img.shields.io/badge/base-Arch%20Linux-1793D1)
 
 ## Vision
 
@@ -22,7 +22,7 @@ The project prioritizes:
 
 Current design direction:
 
-**Blood Moon**
+**`Blood Moon`**
 
 A cinematic dark theme built around:
 
@@ -36,7 +36,7 @@ A cinematic dark theme built around:
 
 ## Repository Structure
 
-```
+```text
 NerfexOS/
 ├── assets/
 ├── boot/

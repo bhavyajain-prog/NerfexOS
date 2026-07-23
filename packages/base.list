@@ -1,0 +1,20 @@
+# Base system packages
+# Derived from docs/architecture.md — Init, Bootloader, Boot Splash, Shell
+#
+# NOTE: kernel flavor not yet decided in architecture.md (current Garuda
+# install uses linux-zen). Using `linux` as placeholder until confirmed.
+
+base
+base-devel
+linux              # TODO: confirm — keep linux-zen instead? current system uses zen kernel
+linux-firmware
+networkmanager
+git
+sudo
+
+# Shell (docs/architecture.md)
+fish
+
+# Boot stack (docs/architecture.md)
+# systemd-boot ships with systemd — no separate package needed (managed via bootctl)
+plymouth
